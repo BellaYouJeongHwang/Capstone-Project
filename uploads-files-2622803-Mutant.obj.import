@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://drjfg2jy6n13v"
+path="res://.godot/imported/uploads-files-2622803-Mutant.obj-f1ac2c827070345cd59f87c33c21fb61.mesh"
+
+[deps]
+
+files=["res://.godot/imported/uploads-files-2622803-Mutant.obj-f1ac2c827070345cd59f87c33c21fb61.mesh"]
+
+source_file="res://uploads-files-2622803-Mutant.obj"
+dest_files=["res://.godot/imported/uploads-files-2622803-Mutant.obj-f1ac2c827070345cd59f87c33c21fb61.mesh", "res://.godot/imported/uploads-files-2622803-Mutant.obj-f1ac2c827070345cd59f87c33c21fb61.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

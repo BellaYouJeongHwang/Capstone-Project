@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cp1ga52edud0q"
+path="res://.godot/imported/uploads-files-4153000-enemy+.obj-d2f453757aee9869d1a08aa927c66257.mesh"
+
+[deps]
+
+files=["res://.godot/imported/uploads-files-4153000-enemy+.obj-d2f453757aee9869d1a08aa927c66257.mesh"]
+
+source_file="res://uploads-files-4153000-enemy+.obj"
+dest_files=["res://.godot/imported/uploads-files-4153000-enemy+.obj-d2f453757aee9869d1a08aa927c66257.mesh", "res://.godot/imported/uploads-files-4153000-enemy+.obj-d2f453757aee9869d1a08aa927c66257.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

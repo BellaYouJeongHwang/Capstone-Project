@@ -1,0 +1,165 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5y2vfrwbryho"]
+
+[ext_resource type="Texture2D" path="res://OIP.jpg" id="1_23ukd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4kfhh"]
+albedo_color = Color(0.933333, 0.737255, 0.396078, 1)
+albedo_texture_force_srgb = true
+normal_scale = -1.02
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kttq3"]
+albedo_color = Color(0.231373, 1, 0.478431, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d520d"]
+albedo_texture = ExtResource("1_23ukd")
+
+[node name="Forest" type="Node3D"]
+
+[node name="ground" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 97.608, -0.033696, 96.3636)
+size = Vector3(196.216, 0.4, 193.685)
+material = SubResource("StandardMaterial3D_4kfhh")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.338894, 0.37453, -0.863063, -0.00878428, 0.916048, 0.400972, 0.940783, 0.143469, -0.307154, -6.07663, 7.19327, 1.85537)
+fov = 81.5625
+
+[node name="tree" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.7382, -7.77845, -3.03697)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="tree"]
+transform = Transform3D(0.999666, -0.00179397, -0.0257831, 0.00137677, 0.999868, -0.0161902, 0.0258088, 0.0161493, 0.999536, 42.7034, 17.6433, 42.6415)
+radius = 6.15617
+height = 8.906
+sides = 36
+cone = true
+material = SubResource("StandardMaterial3D_kttq3")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="tree/CSGCylinder3D"]
+transform = Transform3D(0.999666, 0.00137676, 0.0258088, -0.00179398, 0.999868, 0.0161493, -0.0257831, -0.0161902, 0.999536, 0.0190887, -4.44911, 0.0452309)
+size = Vector3(2.29834, 13.084, 1.99707)
+
+[node name="tree2" type="Node3D" parent="tree"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.7976, -0.833409, -2.26904)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="tree/tree2"]
+transform = Transform3D(0.999666, -0.00179397, -0.0257831, 0.00137677, 0.999868, -0.0161902, 0.0258088, 0.0161493, 0.999536, 44.4357, 17.6433, 42.6415)
+radius = 6.15617
+height = 8.906
+sides = 36
+cone = true
+material = SubResource("StandardMaterial3D_kttq3")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="tree/tree2/CSGCylinder3D"]
+transform = Transform3D(0.999666, 0.00137676, 0.0258088, -0.00179398, 0.999868, 0.0161493, -0.0257831, -0.0161902, 0.999536, 0.0190887, -4.44911, 0.0452309)
+size = Vector3(2.29834, 13.084, 1.99707)
+
+[node name="tree3" type="Node3D" parent="tree"]
+transform = Transform3D(0.999985, 0.00540263, 0.00110854, -0.00540312, 0.999985, 0.000436445, -0.00110616, -0.000442434, 0.999999, -21.8827, 0.216063, 1.82411)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="tree/tree3"]
+transform = Transform3D(0.999666, -0.00179398, -0.0257831, 0.00137677, 0.999868, -0.0161902, 0.0258088, 0.0161493, 0.999536, 50.2671, 17.1203, 27.9956)
+radius = 6.15617
+height = 8.906
+sides = 36
+cone = true
+material = SubResource("StandardMaterial3D_kttq3")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="tree/tree3/CSGCylinder3D"]
+transform = Transform3D(0.999666, 0.00137676, 0.0258088, -0.00179398, 0.999868, 0.0161493, -0.0257831, -0.0161902, 0.999536, 0.0190887, -4.44911, 0.0452309)
+size = Vector3(2.29834, 13.084, 1.99707)
+
+[node name="tree4" type="Node3D" parent="tree"]
+transform = Transform3D(0.999985, 0.00540263, 0.00110854, -0.00540312, 0.999985, 0.000436445, -0.00110616, -0.000442434, 0.999999, -21.8827, 0.216063, 1.82411)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="tree/tree4"]
+transform = Transform3D(0.999666, -0.00179398, -0.0257831, 0.00137677, 0.999868, -0.0161902, 0.0258088, 0.0161493, 0.999536, 58.8734, 17.843, 57.9815)
+radius = 6.15617
+height = 8.906
+sides = 36
+cone = true
+material = SubResource("StandardMaterial3D_kttq3")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="tree/tree4/CSGCylinder3D"]
+transform = Transform3D(0.999666, 0.00137676, 0.0258088, -0.00179398, 0.999868, 0.0161493, -0.0257831, -0.0161902, 0.999536, 0.0190887, -4.44911, 0.0452309)
+size = Vector3(2.29834, 13.084, 1.99707)
+
+[node name="tree5" type="Node3D" parent="tree"]
+transform = Transform3D(0.999985, 0.00540263, 0.00110854, -0.00540312, 0.999985, 0.000436445, -0.00110616, -0.000442434, 0.999999, -21.8827, 0.216063, 1.82411)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="tree/tree5"]
+transform = Transform3D(0.999666, -0.00179398, -0.0257831, 0.00137677, 0.999868, -0.0161902, 0.0258088, 0.0161493, 0.999536, 73.8563, 17.4473, 66.0476)
+radius = 6.15617
+height = 8.906
+sides = 36
+cone = true
+material = SubResource("StandardMaterial3D_kttq3")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="tree/tree5/CSGCylinder3D"]
+transform = Transform3D(0.999666, 0.00137676, 0.0258088, -0.00179398, 0.999868, 0.0161493, -0.0257831, -0.0161902, 0.999536, 0.0190887, -4.44911, 0.0452309)
+size = Vector3(2.29834, 13.084, 1.99707)
+
+[node name="tree6" type="Node3D" parent="tree"]
+transform = Transform3D(0.999985, 0.00540263, 0.00110854, -0.00540312, 0.999985, 0.000436445, -0.00110616, -0.000442434, 0.999999, -21.8827, 0.216063, 1.82411)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="tree/tree6"]
+transform = Transform3D(0.999666, -0.00179398, -0.0257831, 0.00137677, 0.999868, -0.0161902, 0.0258088, 0.0161493, 0.999536, 49.6639, 17.3146, 70.5377)
+radius = 6.15617
+height = 8.906
+sides = 36
+cone = true
+material = SubResource("StandardMaterial3D_kttq3")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="tree/tree6/CSGCylinder3D"]
+transform = Transform3D(0.999666, 0.00137676, 0.0258088, -0.00179398, 0.999868, 0.0161493, -0.0257831, -0.0161902, 0.999536, 0.0190811, -4.4491, 0.0452309)
+size = Vector3(2.29834, 13.084, 1.99707)
+
+[node name="tree7" type="Node3D" parent="tree"]
+transform = Transform3D(0.999985, 0.00540263, 0.00110854, -0.00540312, 0.999985, 0.000436445, -0.00110616, -0.000442434, 0.999999, -21.8827, 0.216063, 1.82411)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="tree/tree7"]
+transform = Transform3D(0.999666, -0.00179397, -0.0257831, 0.00137677, 0.999868, -0.0161902, 0.0258088, 0.0161493, 0.999536, 39.9449, 17.2691, 54.5074)
+radius = 6.15617
+height = 8.906
+sides = 36
+cone = true
+material = SubResource("StandardMaterial3D_kttq3")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="tree/tree7/CSGCylinder3D"]
+transform = Transform3D(0.999666, 0.00137676, 0.0258088, -0.00179398, 0.999868, 0.0161493, -0.0257831, -0.0161902, 0.999536, 0.0190849, -4.4491, 0.0452309)
+size = Vector3(2.29834, 13.084, 1.99707)
+
+[node name="tree8" type="Node3D" parent="tree"]
+transform = Transform3D(0.999985, 0.00540263, 0.00110854, -0.00540312, 0.999985, 0.000436445, -0.00110616, -0.000442434, 0.999999, -21.8827, 0.216063, 1.82411)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="tree/tree8"]
+transform = Transform3D(0.553998, -0.0161787, -0.832361, -0.00138335, 0.999792, -0.0203538, 0.832517, 0.0124274, 0.55386, 79.9086, 18.0598, 52.0048)
+radius = 6.15617
+height = 8.906
+sides = 36
+cone = true
+material = SubResource("StandardMaterial3D_kttq3")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="tree/tree8/CSGCylinder3D"]
+transform = Transform3D(0.999666, 0.00137676, 0.0258088, -0.00179398, 0.999868, 0.0161493, -0.0257831, -0.0161902, 0.999536, 0.0190887, -4.44911, 0.0452309)
+size = Vector3(2.29834, 13.084, 1.99707)
+
+[node name="Rock" type="CSGBox3D" parent="."]
+transform = Transform3D(0.114322, 0.159055, -0.980628, -0.812012, 0.58364, 0, 0.572334, 0.796282, 0.195878, 64.3039, 1.13194, 51.6957)
+size = Vector3(5, 5, 5)
+material = SubResource("StandardMaterial3D_d520d")
+
+[node name="Rock2" type="CSGBox3D" parent="Rock"]
+transform = Transform3D(0.726087, -0.381092, 0.572334, -0.381092, 0.469791, 0.796282, -0.572334, -0.796282, 0.195878, -10.8749, -14.9142, 23.4295)
+size = Vector3(5, 5, 5)
+material = SubResource("StandardMaterial3D_d520d")
+
+[node name="Rock3" type="CSGBox3D" parent="Rock"]
+transform = Transform3D(0.324213, -0.940215, 0.104316, -0.940215, -0.30811, 0.145134, -0.104316, -0.145134, -0.983897, -4.65126, -6.25526, 14.6381)
+size = Vector3(5, 5, 5)
+material = SubResource("StandardMaterial3D_d520d")
+
+[node name="Rock4" type="CSGBox3D" parent="Rock"]
+transform = Transform3D(0.91869, -0.113125, 0.378432, -0.113125, 0.84261, 0.526508, -0.378432, -0.526508, 0.761301, -6.77397, -9.20856, -11.7476)
+size = Vector3(5, 5, 5)
+material = SubResource("StandardMaterial3D_d520d")
